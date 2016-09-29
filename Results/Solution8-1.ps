@@ -1,0 +1,138 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 284 320 292 328
+%%Title: (null)
+%%Creator: irit2ps
+%%CreationDate: dd:mm:yy
+%%EndComments
+
+
+gsave
+
+72 72 scale
+4.0 4.500000 translate		% center image
+3.500000 3.500000 scale		% maps -1..1 to this domain
+
+/pl {
+    newpath
+    moveto
+    {counttomark 0 ne {lineto} {exit} ifelse} loop
+    pop % the mark
+    stroke
+} def
+
+/pf {
+    newpath
+    moveto
+    {counttomark 0 ne {lineto} {exit} ifelse} loop
+    pop % the mark
+    fill
+} def
+
+/cl {
+    newpath
+    moveto
+    curveto
+    stroke
+} def
+
+/cf {
+    newpath
+    moveto
+    curveto
+    fill
+} def
+
+/ln { % Line
+    newpath
+    moveto
+    lineto
+    stroke
+} def
+
+/lw { % Line with Width control
+    newpath
+    setlinewidth
+    moveto
+    lineto
+    stroke
+} def
+
+/ldg { % Line with Depth control - Gray
+    newpath
+    setgray
+    moveto
+    lineto
+    stroke
+} def
+
+/ldc { % Line with Depth control - Color
+    newpath
+    setrgbcolor
+    moveto
+    lineto
+    stroke
+} def
+
+/cw { % Curve with Width control
+    newpath
+    setlinewidth
+    moveto
+    curveto
+    stroke
+} def
+
+/cdg { % Curve with Width control - Gray
+    newpath
+    setgray
+    moveto
+    curveto
+    stroke
+} def
+
+/cdc { % Curve with Width control - Color
+    newpath
+    setrgbcolor
+    moveto
+    curveto
+    stroke
+} def
+
+1 setlinecap
+1 setlinejoin
+0.004000 setlinewidth
+
+0.000000 0.000000 1.000000 setrgbcolor
+mark
+0.0000 0.0000
+1.0000 0.0000
+pl
+0.000000 0.000000 1.000000 setrgbcolor
+mark
+0.0000 0.0000
+0.0000 1.0000
+pl
+1.000000 0.000000 1.000000 setrgbcolor
+mark
+0.4840 0.3548
+0.6812 0.5085
+0.4496 0.6024
+0.4840 0.3548
+pf
+0.000000 0.000000 1.000000 setrgbcolor
+mark
+0.0000 0.0000
+0.4840 0.3548
+pl
+0.000000 0.000000 1.000000 setrgbcolor
+mark
+1.0000 0.0000
+0.6812 0.5085
+pl
+0.000000 0.000000 1.000000 setrgbcolor
+mark
+0.0000 1.0000
+0.4496 0.6024
+pl
+
+showpage
+grestore
